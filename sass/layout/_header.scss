@@ -1,3 +1,40 @@
+.page-header {
+    padding-top: 16px;
+    padding-bottom: 16px;
+}
+
+.page-header__container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+//0px-767px
+
+@media screen and (max-width: 767px) {
+    .mobile-menu-open-btn {
+        border: none;
+        background: transparent;
+        padding: 0;
+        line-height: 0;
+    }
+    .navigation-list {
+        display: none;
+        }
+    .contacts {
+        display: none;
+        }
+}
+
+//768px
+
+@media screen and (min-width: 768px) {
+    .mobile-menu-open-btn {
+        display: none;
+    }
+    
+}
+
 // .page-header__container {
 //     display: flex;
 //     align-items: center;
