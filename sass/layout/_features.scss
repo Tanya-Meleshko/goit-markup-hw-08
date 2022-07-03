@@ -1,0 +1,35 @@
+.features__title {
+    @include font;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: var(--color-title);
+
+    margin-bottom: 10px;
+}
+
+.features__text {
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+}
+
+.features {
+    display: flex;
+    justify-content: center;
+    margin-left: -30px;
+    margin-top: -30px;
+}
+
+.features__item {
+    margin-left: 30px;
+    margin-top: 30px;
+    flex-basis: calc((100% - 120px) / 4);
+}
+
+.features__card {
+    @extend %align;
+    height: 120px;
+    background: var(--background-light);
+    border-radius: 4px;
+    margin-bottom: 30px;
+}
