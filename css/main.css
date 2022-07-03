@@ -59,131 +59,30 @@ a {
 }
 
 .container {
-  width: 1200px;
-  margin-left: auto;
-  margin-right: auto;
+  width: 100%;
   padding-left: 15px;
   padding-right: 15px;
 }
 
+@media screen and (min-width: 480px) {
+  .container {
+    width: 480px;
+    margin: 0 auto;
+  }
+}
+@media screen and (min-width: 768px) {
+  .container {
+    width: 768px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .container {
+    width: 1200px;
+  }
+}
 .section {
   padding-top: 94px;
   padding-bottom: 94px;
-}
-
-.logo {
-  font-family: "Raleway", sans-serif;
-  font-weight: 700;
-  font-size: 26px;
-  line-height: 1.19;
-  letter-spacing: 0.03em;
-  color: var(--color-in-action);
-  display: block;
-}
-
-.logo__dark {
-  color: var(--color-dark);
-}
-
-.logo__light {
-  color: var(--color-light);
-}
-
-.page-header__logo {
-  margin-right: 90px;
-  padding-top: 24px;
-  padding-bottom: 25px;
-}
-
-.footer__logo {
-  margin-bottom: 20px;
-}
-
-.page-header__container {
-  display: flex;
-  align-items: center;
-}
-
-.navigation {
-  display: flex;
-  align-items: center;
-}
-
-.navigation-list {
-  display: flex;
-  align-items: center;
-}
-
-.page-header__contacts {
-  display: flex;
-  align-items: center;
-  margin-left: auto;
-}
-
-.navigation-list__item:not(:last-child),
-.contacts__item:not(:last-child) {
-  margin-right: 50px;
-}
-
-.page-header {
-  background: var(--color-light);
-  border-bottom: 1px solid #ececec;
-}
-
-.navigation-list__link {
-  display: block;
-  position: relative;
-  font-weight: 500;
-  font-size: 14px;
-  line-height: 1.14;
-  letter-spacing: 0.02em;
-  color: var(--color-title);
-  padding-top: 32px;
-  padding-bottom: 32px;
-  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-.navigation-list__link:hover, .navigation-list__link:focus {
-  color: var(--color-in-action);
-}
-
-.contacts__link {
-  display: flex;
-  align-items: center;
-  font-weight: 500;
-  font-size: 14px;
-  line-height: 1.14;
-  letter-spacing: 0.02em;
-  color: var(--color-text);
-  padding-top: 32px;
-  padding-bottom: 32px;
-  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-.contacts__link:hover, .contacts__link:focus {
-  color: var(--color-in-action);
-}
-
-.navigation-list__link_active {
-  color: var(--color-in-action);
-}
-.navigation-list__link_active::after {
-  content: "";
-  position: absolute;
-  display: block;
-  width: 100%;
-  height: 4px;
-  left: 0;
-  bottom: -1px;
-  background: var(--color-in-action);
-  border-radius: 2px;
-}
-
-.contacts__icon {
-  fill: var(--color-text);
-  margin-right: 10px;
-  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-.contacts__link:hover .contacts__icon, .contacts__link:focus .contacts__icon {
-  fill: var(--color-in-action);
 }
 
 .order {
@@ -202,7 +101,7 @@ a {
 .order__title {
   font-weight: 900;
   font-size: 44px;
-  line-height: 1.36;
+  line-height: 1.3636363636;
   text-align: center;
   letter-spacing: 0.06em;
   text-transform: uppercase;
@@ -214,7 +113,7 @@ a {
 .order__modal-button {
   font-weight: 700;
   font-size: 16px;
-  line-height: 1.87;
+  line-height: 1.875;
   color: var(--color-light);
   background: var(--color-in-action);
   cursor: pointer;
@@ -234,8 +133,8 @@ a {
 
 .features__title {
   font-weight: 700;
-  font-size: 14px;
-  line-height: 1.14;
+  font-size: 14;
+  line-height: 1.1428571429;
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: var(--color-title);
@@ -275,7 +174,7 @@ a {
 .section__title {
   font-weight: 700;
   font-size: 36px;
-  line-height: 1.17;
+  line-height: 1.1666666667;
   letter-spacing: 0.03em;
   color: var(--color-title);
   margin-bottom: 50px;
@@ -307,8 +206,8 @@ a {
   height: 70px;
   background: rgba(47, 48, 58, 0.8);
   font-weight: 700;
-  font-size: 14px;
-  line-height: 1.14;
+  font-size: 14;
+  line-height: 1.1428571429;
   text-align: center;
   letter-spacing: 0.03em;
   text-transform: uppercase;
@@ -335,7 +234,7 @@ a {
 .section__title {
   font-weight: 700;
   font-size: 36px;
-  line-height: 1.17;
+  line-height: 1.1666666667;
   letter-spacing: 0.03em;
   color: var(--color-title);
   margin-bottom: 50px;
@@ -345,7 +244,7 @@ a {
 .our-team__title {
   font-weight: 500;
   font-size: 16px;
-  line-height: 1.19;
+  line-height: 1.1875;
   text-align: center;
   letter-spacing: 0.03em;
   color: var(--color-title);
@@ -405,7 +304,7 @@ a {
 .section__title {
   font-weight: 700;
   font-size: 36px;
-  line-height: 1.17;
+  line-height: 1.1666666667;
   text-align: center;
   letter-spacing: 0.03em;
   color: #212121;
@@ -448,7 +347,7 @@ a {
   border: none;
   font-weight: 500;
   font-size: 16px;
-  line-height: 1.62;
+  line-height: 1.625;
   text-align: center;
   letter-spacing: 0.03em;
   color: var(--color-title);
@@ -589,8 +488,8 @@ a {
 
 .wrapper-social__title {
   font-weight: 700;
-  font-size: 14px;
-  line-height: 1.14;
+  font-size: 14;
+  line-height: 1.1428571429;
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: #ffffff;
@@ -627,8 +526,8 @@ a {
 
 .subscription-form__title {
   font-weight: 700;
-  font-size: 14px;
-  line-height: 1.14;
+  font-size: 14;
+  line-height: 1.1428571429;
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: var(--color-light);
@@ -656,7 +555,7 @@ a {
 .subscription-form__btn {
   font-weight: 700;
   font-size: 16px;
-  line-height: 1.87;
+  line-height: 1.875;
   color: var(--color-light);
   background: var(--color-in-action);
   cursor: pointer;
@@ -767,7 +666,7 @@ a {
   display: block;
   font-weight: 400;
   font-size: 12px;
-  line-height: 1.17;
+  line-height: 1.1666666667;
   letter-spacing: 0.01em;
   color: var(--color-text);
   margin-bottom: 4px;
@@ -841,7 +740,7 @@ a {
 .backdrop__modal-form-checkbox-link {
   font-weight: 400;
   font-size: 14px;
-  line-height: 1.71;
+  line-height: 1.7142857143;
   letter-spacing: 0.03em;
   text-decoration-line: underline;
   color: var(--color-in-action);
@@ -850,7 +749,7 @@ a {
 .backdrop__modal-form-btn {
   font-weight: 700;
   font-size: 16px;
-  line-height: 1.87;
+  line-height: 1.875;
   color: var(--color-light);
   background: var(--color-in-action);
   cursor: pointer;
