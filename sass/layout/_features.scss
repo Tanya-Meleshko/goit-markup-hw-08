@@ -1,3 +1,8 @@
+.section {
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+
 .features__title {
   @include font(700, 14px, 16px);
   letter-spacing: 0.03em;
@@ -61,6 +66,11 @@
 //1200px
 
 @media screen and (min-width: 1200px) {
+  .section {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
+
   .features {
     display: flex;
     flex-wrap: nowrap;
