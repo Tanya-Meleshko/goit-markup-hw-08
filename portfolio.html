@@ -30,15 +30,13 @@
           >
           <ul class="navigation-list">
             <li class="navigation-list__item">
-              <a class="navigation-list__link link" href="./index.html">Студия</a>
+              <a class="navigation-list__link" href="./index.html">Студия</a>
             </li>
             <li class="navigation-list__item">
-              <a class="navigation-list__link navigation-list__link_active link" href="#"
-                >Портфолио</a
-              >
+              <a class="navigation-list__link navigation-list__link_active" href="#">Портфолио</a>
             </li>
             <li class="navigation-list__item">
-              <a class="navigation-list__link link" href="#">Контакты</a>
+              <a class="navigation-list__link" href="#">Контакты</a>
             </li>
           </ul>
         </nav>
@@ -77,12 +75,10 @@
 
           <ul class="mobile-navigation-list mobile-menu__mobile-navigation-list">
             <li class="mobile-navigation-list__item">
-              <a class="mobile-navigation-list__link" href="#">Студия</a>
+              <a class="mobile-navigation-list__link" href="./index.html">Студия</a>
             </li>
             <li class="mobile-navigation-list__item">
-              <a
-                class="mobile-navigation-list__link mobile-navigation-list__link_active"
-                href="./portfolio.html"
+              <a class="mobile-navigation-list__link mobile-navigation-list__link_active" href="#"
                 >Портфолио</a
               >
             </li>
@@ -141,13 +137,64 @@
             <li class="catalog-list__item">
               <a href="" class="catalog-list__link">
                 <div class="catalog-list__img-wrapper">
-                  <img
-                    class="catalog-list__image"
-                    src="./images/catalog/img.jpg"
-                    alt="ноут-бук с изображением сайта"
-                    width="370"
-                    height="290"
-                  />
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/content/technokr-desktop.webp    1x,
+                        ./images/content/technokr-desktop@2x.webp 2x
+                      "
+                      media="(min-width: 1200px)"
+                      type="image/webp"
+                    />
+
+                    <source
+                      srcset="
+                        ./images/content/technokr-desktop.jpg    1x,
+                        ./images/content/technokr-desktop@2x.jpg 2x
+                      "
+                      media="(min-width: 1200px)"
+                    />
+
+                    <source
+                      srcset="
+                        ./images/content/technokr-tablet.webp    1x,
+                        ./images/content/technokr-tablet@2x.webp 2x
+                      "
+                      media="(min-width: 768px)"
+                      type="image/webp"
+                    />
+
+                    <source
+                      srcset="
+                        ./images/content/technokr-tablet.jpg    1x,
+                        ./images/content/technokr-tablet@2x.jpg 2x
+                      "
+                      media="(min-width: 768px)"
+                    />
+
+                    <source
+                      srcset="
+                        ./images/content/technokr-mobile.webp    1x,
+                        ./images/content/technokr-mobile@2x.webp 2x
+                      "
+                      media="(max-width: 767px)"
+                      type="image/webp"
+                    />
+
+                    <source
+                      srcset="
+                        ./images/content/technokr-mobile.jpg    1x,
+                        ./images/content/technokr-mobile@2x.jpg 2x
+                      "
+                      media="(max-width: 767px)"
+                    />
+                    <img
+                      class="catalog-list__image"
+                      src="./images/content/technokr-mobile.jpg"
+                      alt="ноут-бук с изображением сайта"
+                    />
+                  </picture>
+
                   <p class="catalog-list__overlay">
                     Ресурс предлагает комплексные предложения с разным уровнем функционала и
                     сервисов. Все это позволит посетителю получить исчерпывающие сведения о компании
@@ -163,13 +210,64 @@
             <li class="catalog-list__item">
               <a href="" class="catalog-list__link">
                 <div class="catalog-list__img-wrapper">
-                  <img
-                    class="catalog-list__image"
-                    src="./images/catalog/img-1.jpg"
-                    alt="два баскетболиста с мячом в прыжке"
-                    width="370"
-                    height="290"
-                  />
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/content/poster-desktop.webp    1x,
+                        ./images/content/poster-desktop@2x.webp 2x
+                      "
+                      media="(min-width: 1200px)"
+                      type="image/webp"
+                    />
+
+                    <source
+                      srcset="
+                        ./images/content/poster-desktop.jpg    1x,
+                        ./images/content/poster-desktop@2x.jpg 2x
+                      "
+                      media="(min-width: 1200px)"
+                    />
+
+                    <source
+                      srcset="
+                        ./images/content/poster-tablet.webp    1x,
+                        ./images/content/poster-tablet@2x.webp 2x
+                      "
+                      media="(min-width: 768px)"
+                      type="image/webp"
+                    />
+
+                    <source
+                      srcset="
+                        ./images/content/poster-tablet.jpg    1x,
+                        ./images/content/poster-tablet@2x.jpg 2x
+                      "
+                      media="(min-width: 768px)"
+                    />
+
+                    <source
+                      srcset="
+                        ./images/content/poster-mobile.webp    1x,
+                        ./images/content/poster-mobile@2x.webp 2x
+                      "
+                      media="(max-width: 767px)"
+                      type="image/webp"
+                    />
+
+                    <source
+                      srcset="
+                        ./images/content/poster-mobile.jpg    1x,
+                        ./images/content/poster-mobile@2x.jpg 2x
+                      "
+                      media="(max-width: 767px)"
+                    />
+                    <img
+                      class="catalog-list__image"
+                      src="./images/content/poster-mobile.jpg"
+                      alt="два баскетболиста с мячом в прыжке"
+                    />
+                  </picture>
+
                   <p class="catalog-list__overlay">
                     Ресурс предлагает комплексные предложения с разным уровнем функционала и
                     сервисов. Все это позволит посетителю получить исчерпывающие сведения о компании
@@ -185,13 +283,64 @@
             <li class="catalog-list__item">
               <a href="" class="catalog-list__link">
                 <div class="catalog-list__img-wrapper">
-                  <img
-                    class="catalog-list__image"
-                    src="./images/catalog/img-2.jpg"
-                    alt="эмблема ресторана в виде рыбы"
-                    width="370"
-                    height="290"
-                  />
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/content/seafood-desktop.webp    1x,
+                        ./images/content/seafood-desktop@2x.webp 2x
+                      "
+                      media="(min-width: 1200px)"
+                      type="image/webp"
+                    />
+
+                    <source
+                      srcset="
+                        ./images/content/seafood-desktop.jpg    1x,
+                        ./images/content/seafood-desktop@2x.jpg 2x
+                      "
+                      media="(min-width: 1200px)"
+                    />
+
+                    <source
+                      srcset="
+                        ./images/content/seafood-tablet.webp    1x,
+                        ./images/content/seafood-tablet@2x.webp 2x
+                      "
+                      media="(min-width: 768px)"
+                      type="image/webp"
+                    />
+
+                    <source
+                      srcset="
+                        ./images/content/seafood-tablet.jpg    1x,
+                        ./images/content/seafood-tablet@2x.jpg 2x
+                      "
+                      media="(min-width: 768px)"
+                    />
+
+                    <source
+                      srcset="
+                        ./images/content/seafood-mobile.webp    1x,
+                        ./images/content/seafood-mobile@2x.webp 2x
+                      "
+                      media="(max-width: 767px)"
+                      type="image/webp"
+                    />
+
+                    <source
+                      srcset="
+                        ./images/content/seafood-mobile.jpg    1x,
+                        ./images/content/seafood-mobile@2x.jpg 2x
+                      "
+                      media="(max-width: 767px)"
+                    />
+                    <img
+                      class="catalog-list__image"
+                      src="./images/content/seafood-mobile.jpg"
+                      alt="эмблема ресторана в виде рыбы"
+                    />
+                  </picture>
+
                   <p class="catalog-list__overlay">
                     Ресурс предлагает комплексные предложения с разным уровнем функционала и
                     сервисов. Все это позволит посетителю получить исчерпывающие сведения о компании
@@ -207,13 +356,64 @@
             <li class="catalog-list__item">
               <a href="" class="catalog-list__link">
                 <div class="catalog-list__img-wrapper">
-                  <img
-                    class="catalog-list__image"
-                    src="./images/catalog/img-3.jpg"
-                    alt="наушники"
-                    width="370"
-                    height="290"
-                  />
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/content/prime-desktop.webp    1x,
+                        ./images/content/prime-desktop@2x.webp 2x
+                      "
+                      media="(min-width: 1200px)"
+                      type="image/webp"
+                    />
+
+                    <source
+                      srcset="
+                        ./images/content/prime-desktop.jpg    1x,
+                        ./images/content/prime-desktop@2x.jpg 2x
+                      "
+                      media="(min-width: 1200px)"
+                    />
+
+                    <source
+                      srcset="
+                        ./images/content/prime-tablet.webp    1x,
+                        ./images/content/prime-tablet@2x.webp 2x
+                      "
+                      media="(min-width: 768px)"
+                      type="image/webp"
+                    />
+
+                    <source
+                      srcset="
+                        ./images/content/prime-tablet.jpg    1x,
+                        ./images/content/prime-tablet@2x.jpg 2x
+                      "
+                      media="(min-width: 768px)"
+                    />
+
+                    <source
+                      srcset="
+                        ./images/content/prime-mobile.webp    1x,
+                        ./images/content/prime-mobile@2x.webp 2x
+                      "
+                      media="(max-width: 767px)"
+                      type="image/webp"
+                    />
+
+                    <source
+                      srcset="
+                        ./images/content/prime-mobile.jpg    1x,
+                        ./images/content/prime-mobile@2x.jpg 2x
+                      "
+                      media="(max-width: 767px)"
+                    />
+                    <img
+                      class="catalog-list__image"
+                      src="./images/content/prime-mobile.jpg"
+                      alt="наушники"
+                    />
+                  </picture>
+
                   <p class="catalog-list__overlay">
                     Ресурс предлагает комплексные предложения с разным уровнем функционала и
                     сервисов. Все это позволит посетителю получить исчерпывающие сведения о компании
@@ -229,13 +429,64 @@
             <li class="catalog-list__item">
               <a href="" class="catalog-list__link">
                 <div class="catalog-list__img-wrapper">
-                  <img
-                    class="catalog-list__image"
-                    src="./images/catalog/img-4.jpg"
-                    alt="две картонные коробки"
-                    width="370"
-                    height="290"
-                  />
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/content/boxes-desktop.webp    1x,
+                        ./images/content/boxes-desktop@2x.webp 2x
+                      "
+                      media="(min-width: 1200px)"
+                      type="image/webp"
+                    />
+
+                    <source
+                      srcset="
+                        ./images/content/boxes-desktop.jpg    1x,
+                        ./images/content/boxes-desktop@2x.jpg 2x
+                      "
+                      media="(min-width: 1200px)"
+                    />
+
+                    <source
+                      srcset="
+                        ./images/content/boxes-tablet.webp    1x,
+                        ./images/content/boxes-tablet@2x.webp 2x
+                      "
+                      media="(min-width: 768px)"
+                      type="image/webp"
+                    />
+
+                    <source
+                      srcset="
+                        ./images/content/boxes-tablet.jpg    1x,
+                        ./images/content/boxes-tablet@2x.jpg 2x
+                      "
+                      media="(min-width: 768px)"
+                    />
+
+                    <source
+                      srcset="
+                        ./images/content/boxes-mobile.webp    1x,
+                        ./images/content/boxes-mobile@2x.webp 2x
+                      "
+                      media="(max-width: 767px)"
+                      type="image/webp"
+                    />
+
+                    <source
+                      srcset="
+                        ./images/content/boxes-mobile.jpg    1x,
+                        ./images/content/boxes-mobile@2x.jpg 2x
+                      "
+                      media="(max-width: 767px)"
+                    />
+                    <img
+                      class="catalog-list__image"
+                      src="./images/content/boxes-mobile.jpg"
+                      alt="две картонные коробки"
+                    />
+                  </picture>
+
                   <p class="catalog-list__overlay">
                     Ресурс предлагает комплексные предложения с разным уровнем функционала и
                     сервисов. Все это позволит посетителю получить исчерпывающие сведения о компании
@@ -251,13 +502,64 @@
             <li class="catalog-list__item">
               <a href="" class="catalog-list__link">
                 <div class="catalog-list__img-wrapper">
-                  <img
-                    class="catalog-list__image"
-                    src="./images/catalog/img-5.jpg"
-                    alt="монитор с изображением сайта"
-                    width="370"
-                    height="290"
-                  />
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/content/inspiration-desktop.webp    1x,
+                        ./images/content/inspiration-desktop@2x.webp 2x
+                      "
+                      media="(min-width: 1200px)"
+                      type="image/webp"
+                    />
+
+                    <source
+                      srcset="
+                        ./images/content/inspiration-desktop.jpg    1x,
+                        ./images/content/inspiration-desktop@2x.jpg 2x
+                      "
+                      media="(min-width: 1200px)"
+                    />
+
+                    <source
+                      srcset="
+                        ./images/content/inspiration-tablet.webp    1x,
+                        ./images/content/inspiration-tablet@2x.webp 2x
+                      "
+                      media="(min-width: 768px)"
+                      type="image/webp"
+                    />
+
+                    <source
+                      srcset="
+                        ./images/content/inspiration-tablet.jpg    1x,
+                        ./images/content/inspiration-tablet@2x.jpg 2x
+                      "
+                      media="(min-width: 768px)"
+                    />
+
+                    <source
+                      srcset="
+                        ./images/content/inspiration-mobile.webp    1x,
+                        ./images/content/inspiration-mobile@2x.webp 2x
+                      "
+                      media="(max-width: 767px)"
+                      type="image/webp"
+                    />
+
+                    <source
+                      srcset="
+                        ./images/content/inspiration-mobile.jpg    1x,
+                        ./images/content/inspiration-mobile@2x.jpg 2x
+                      "
+                      media="(max-width: 767px)"
+                    />
+                    <img
+                      class="catalog-list__image"
+                      src="./images/content/inspiration-mobile.jpg"
+                      alt="монитор с изображением сайта"
+                    />
+                  </picture>
+
                   <p class="catalog-list__overlay">
                     Ресурс предлагает комплексные предложения с разным уровнем функционала и
                     сервисов. Все это позволит посетителю получить исчерпывающие сведения о компании
@@ -273,13 +575,64 @@
             <li class="catalog-list__item">
               <a href="" class="catalog-list__link">
                 <div class="catalog-list__img-wrapper">
-                  <img
-                    class="catalog-list__image"
-                    src="./images/catalog/img-6.jpg"
-                    alt="открытая книга"
-                    width="370"
-                    height="290"
-                  />
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/content/limited-desktop.webp    1x,
+                        ./images/content/limited-desktop@2x.webp 2x
+                      "
+                      media="(min-width: 1200px)"
+                      type="image/webp"
+                    />
+
+                    <source
+                      srcset="
+                        ./images/content/limited-desktop.jpg    1x,
+                        ./images/content/limited-desktop@2x.jpg 2x
+                      "
+                      media="(min-width: 1200px)"
+                    />
+
+                    <source
+                      srcset="
+                        ./images/content/limited-tablet.webp    1x,
+                        ./images/content/limited-tablet@2x.webp 2x
+                      "
+                      media="(min-width: 768px)"
+                      type="image/webp"
+                    />
+
+                    <source
+                      srcset="
+                        ./images/content/limited-tablet.jpg    1x,
+                        ./images/content/limited-tablet@2x.jpg 2x
+                      "
+                      media="(min-width: 768px)"
+                    />
+
+                    <source
+                      srcset="
+                        ./images/content/limited-mobile.webp    1x,
+                        ./images/content/limited-mobile@2x.webp 2x
+                      "
+                      media="(max-width: 767px)"
+                      type="image/webp"
+                    />
+
+                    <source
+                      srcset="
+                        ./images/content/limited-mobile.jpg    1x,
+                        ./images/content/limited-mobile@2x.jpg 2x
+                      "
+                      media="(max-width: 767px)"
+                    />
+                    <img
+                      class="catalog-list__image"
+                      src="./images/content/limited-mobile.jpg"
+                      alt="открытая книга"
+                    />
+                  </picture>
+
                   <p class="catalog-list__overlay">
                     Ресурс предлагает комплексные предложения с разным уровнем функционала и
                     сервисов. Все это позволит посетителю получить исчерпывающие сведения о компании
@@ -295,13 +648,64 @@
             <li class="catalog-list__item">
               <a href="" class="catalog-list__link">
                 <div class="catalog-list__img-wrapper">
-                  <img
-                    class="catalog-list__image"
-                    src="./images/catalog/img-7.jpg"
-                    alt="бумажная бирка на канатике"
-                    width="370"
-                    height="290"
-                  />
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/content/lab-desktop.webp    1x,
+                        ./images/content/lab-desktop@2x.webp 2x
+                      "
+                      media="(min-width: 1200px)"
+                      type="image/webp"
+                    />
+
+                    <source
+                      srcset="
+                        ./images/content/lab-desktop.jpg    1x,
+                        ./images/content/lab-desktop@2x.jpg 2x
+                      "
+                      media="(min-width: 1200px)"
+                    />
+
+                    <source
+                      srcset="
+                        ./images/content/lab-tablet.webp    1x,
+                        ./images/content/lab-tablet@2x.webp 2x
+                      "
+                      media="(min-width: 768px)"
+                      type="image/webp"
+                    />
+
+                    <source
+                      srcset="
+                        ./images/content/lab-tablet.jpg    1x,
+                        ./images/content/lab-tablet@2x.jpg 2x
+                      "
+                      media="(min-width: 768px)"
+                    />
+
+                    <source
+                      srcset="
+                        ./images/content/lab-mobile.webp    1x,
+                        ./images/content/lab-mobile@2x.webp 2x
+                      "
+                      media="(max-width: 767px)"
+                      type="image/webp"
+                    />
+
+                    <source
+                      srcset="
+                        ./images/content/lab-mobile.jpg    1x,
+                        ./images/content/lab-mobile@2x.jpg 2x
+                      "
+                      media="(max-width: 767px)"
+                    />
+                    <img
+                      class="catalog-list__image"
+                      src="./images/content/lab-mobile.jpg"
+                      alt="бумажная бирка на канатике"
+                    />
+                  </picture>
+
                   <p class="catalog-list__overlay">
                     Ресурс предлагает комплексные предложения с разным уровнем функционала и
                     сервисов. Все это позволит посетителю получить исчерпывающие сведения о компании
@@ -317,13 +721,65 @@
             <li class="catalog-list__item">
               <a href="" class="catalog-list__link">
                 <div class="catalog-list__img-wrapper">
-                  <img
-                    class="catalog-list__image"
-                    src="./images/catalog/img-8.jpg"
-                    alt="работа на ноут-буке"
-                    width="370"
-                    height="290"
-                  />
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/content/growing-desktop.webp    1x,
+                        ./images/content/growing-desktop@2x.webp 2x
+                      "
+                      media="(min-width: 1200px)"
+                      type="image/webp"
+                    />
+
+                    <source
+                      srcset="
+                        ./images/content/growing-desktop.jpg    1x,
+                        ./images/content/growing-desktop@2x.jpg 2x
+                      "
+                      media="(min-width: 1200px)"
+                    />
+
+                    <source
+                      srcset="
+                        ./images/content/growing-tablet.webp    1x,
+                        ./images/content/growing-tablet@2x.webp 2x
+                      "
+                      media="(min-width: 768px)"
+                      type="image/webp"
+                    />
+
+                    <source
+                      srcset="
+                        ./images/content/growing-tablet.jpg    1x,
+                        ./images/content/growing-tablet@2x.jpg 2x
+                      "
+                      media="(min-width: 768px)"
+                    />
+
+                    <source
+                      srcset="
+                        ./images/content/growing-mobile.webp    1x,
+                        ./images/content/growing-mobile@2x.webp 2x
+                      "
+                      media="(max-width: 767px)"
+                      type="image/webp"
+                    />
+
+                    <source
+                      srcset="
+                        ./images/content/growing-mobile.jpg    1x,
+                        ./images/content/growing-mobile@2x.jpg 2x
+                      "
+                      media="(max-width: 767px)"
+                    />
+
+                    <img
+                      class="catalog-list__image"
+                      src="./images/content/growing-mobile.jpg"
+                      alt="работа на ноут-буке"
+                    />
+                  </picture>
+
                   <p class="catalog-list__overlay">
                     Ресурс предлагает комплексные предложения с разным уровнем функционала и
                     сервисов. Все это позволит посетителю получить исчерпывающие сведения о компании

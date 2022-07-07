@@ -39,23 +39,28 @@
     background: #188ce8;
   }
 }
-.order {
-  padding-top: 118px;
-  padding-bottom: 128px;
-  background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
-    url('../images/hero/img-hero-mobile.jpg');
-}
 
-@media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+//0px-767px
+
+@media screen and (max-width: 767px) {
   .order {
+    padding-top: 118px;
+    padding-bottom: 128px;
     background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
-      url('../images/hero/img-hero-mobile@2x.jpg');
+      url('../images/hero/img-hero-mobile.jpg');
+  }
+
+  @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+    .order {
+      background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+        url('../images/hero/img-hero-mobile@2x.jpg');
+    }
   }
 }
 
 //768px
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 768px) and (max-width: 1199px) {
   .order {
     padding-top: 118px;
     padding-bottom: 118px;

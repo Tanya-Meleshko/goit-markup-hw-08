@@ -14,6 +14,10 @@
   border-radius: 0px 0px 4px 4px;
 }
 
+.our-team__image {
+  width: 100%;
+}
+
 .section__title {
   @include font(700, 28px, 33px);
   letter-spacing: 0.03em;

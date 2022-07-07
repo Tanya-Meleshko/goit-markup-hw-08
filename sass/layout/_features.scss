@@ -3,6 +3,11 @@
   padding-bottom: 60px;
 }
 
+.features {
+  display: flex;
+  flex-wrap: wrap;
+}
+
 .features__title {
   @include font(700, 14px, 16px);
   letter-spacing: 0.03em;
@@ -44,12 +49,7 @@
 
 //768px
 
-@media screen and (min-width: 768px) {
-  .features {
-    display: flex;
-    flex-wrap: wrap;
-  }
-
+@media screen and (min-width: 768px) and (max-width: 1199px) {
   .features__item {
     flex-basis: calc((100% - 30px) / 2);
 
