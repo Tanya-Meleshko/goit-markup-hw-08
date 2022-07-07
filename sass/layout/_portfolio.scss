@@ -123,7 +123,7 @@
     margin-bottom: 30px;
   }
   .catalog-list__item {
-    flex-basis: calc((100% - 60px) / 2);
+    flex-basis: calc((100% - 30px) / 2);
 
     &:not(:nth-last-child(-n + 2)) {
       margin-bottom: 30px;

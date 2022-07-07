@@ -529,7 +529,7 @@ a {
   }
 
   .features__item {
-    flex-basis: calc((100% - 60px) / 2);
+    flex-basis: calc((100% - 30px) / 2);
   }
   .features__item:not(:nth-child(2n)) {
     margin-right: 30px;
@@ -698,7 +698,7 @@ a {
   }
 
   .our-team__item {
-    flex-basis: calc((100% - 60px) / 2);
+    flex-basis: calc((100% - 30px) / 2);
   }
   .our-team__item:not(:nth-child(2n)) {
     margin-right: 30px;
@@ -792,7 +792,7 @@ a {
 @media screen and (max-width: 767px) {
   .clients__item {
     height: 92px;
-    flex-basis: calc((100% - 60px) / 2);
+    flex-basis: calc((100% - 30px) / 2);
   }
   .clients__item:not(:nth-child(2n)) {
     margin-right: 30px;
@@ -804,12 +804,9 @@ a {
 @media screen and (min-width: 768px) and (max-width: 1199px) {
   .clients__item {
     height: 92px;
-    flex-basis: calc((100% - 90px) / 3);
+    flex-basis: calc((100% - 60px) / 3);
   }
-  .clients__item:not(:nth-child(3)) {
-    margin-right: 30px;
-  }
-  .clients__item:not(:nth-child(6)) {
+  .clients__item:not(:nth-last-child(3n+1)) {
     margin-right: 30px;
   }
   .clients__item:not(:nth-last-child(-n+3)) {
@@ -949,7 +946,7 @@ a {
   }
 
   .catalog-list__item {
-    flex-basis: calc((100% - 60px) / 2);
+    flex-basis: calc((100% - 30px) / 2);
   }
   .catalog-list__item:not(:nth-last-child(-n+2)) {
     margin-bottom: 30px;

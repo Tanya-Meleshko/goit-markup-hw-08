@@ -43,7 +43,7 @@
 @media screen and (max-width: 767px) {
   .clients__item {
     height: 92px;
-    flex-basis: calc((100% - 60px) / 2);
+    flex-basis: calc((100% - 30px) / 2);
 
     &:not(:nth-child(2n)) {
       margin-right: 30px;
@@ -60,13 +60,9 @@
 @media screen and (min-width: 768px) and (max-width: 1199px) {
   .clients__item {
     height: 92px;
-    flex-basis: calc((100% - 90px) / 3);
+    flex-basis: calc((100% - 60px) / 3);
 
-    &:not(:nth-child(3)) {
-      margin-right: 30px;
-    }
-
-    &:not(:nth-child(6)) {
+    &:not(:nth-last-child(3n + 1)) {
       margin-right: 30px;
     }
 
