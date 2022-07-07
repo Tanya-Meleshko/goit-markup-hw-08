@@ -1126,6 +1126,10 @@ a {
   .subscription-form__email {
     width: 100%;
   }
+
+  .catalog-list__image {
+    width: 100%;
+  }
 }
 @media screen and (min-width: 768px) and (max-width: 1199px) {
   .wrapper-logo-address_left {
@@ -1141,6 +1145,10 @@ a {
   .footer__wrapper {
     margin-bottom: 60px;
     justify-content: space-around;
+  }
+
+  .catalog-list__image {
+    width: 100%;
   }
 }
 @media screen and (min-width: 1200px) {
