@@ -203,12 +203,10 @@
               <picture>
                 <source
                   srcset="./images/work/desktop-apps.webp 1x, ./images/work/desktop-apps@2x.webp 2x"
-                  media="(min-width: 1200px)"
                   type="image/webp"
                 />
                 <source
                   srcset="./images/work/desktop-apps.jpg 1x, ./images/work/desktop-apps@2x.jpg 2x"
-                  media="(min-width: 1200px)"
                 />
                 <img src="./images/work/desktop-apps.jpg" alt="верстка" />
               </picture>
@@ -220,12 +218,10 @@
               <picture>
                 <source
                   srcset="./images/work/mobile-apps.webp 1x, ./images/work/mobile-apps@2x.webp 2x"
-                  media="(min-width: 1200px)"
                   type="image/webp"
                 />
                 <source
                   srcset="./images/work/mobile-apps.jpg 1x, ./images/work/mobile-apps@2x.jpg 2x"
-                  media="(min-width: 1200px)"
                 />
                 <img src="./images/work/mobile-apps.jpg" alt="дизайн" />
               </picture>
@@ -233,12 +229,23 @@
             </li>
 
             <li class="activity__item">
-              <img
-                src="./images/activity/box-3.jpg"
-                alt="внешнее оформление"
-                width="370"
-                height="294"
-              />
+              <picture>
+                <source
+                  srcset="
+                    ./images/work/design-solutions.webp    1x,
+                    ./images/work/design-solutions@2x.webp 2x
+                  "
+                  type="image/webp"
+                />
+                <source
+                  srcset="
+                    ./images/work/design-solutions.jpg    1x,
+                    ./images/work/design-solutions@2x.jpg 2x
+                  "
+                />
+                <img src="./images/work/design-solutions.jpg" alt="внешнее оформление" />
+              </picture>
+
               <p class="activity__text">Дизайнерские решения</p>
             </li>
           </ul>
