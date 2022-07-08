@@ -113,3 +113,9 @@
     @include font(500, 16px, 20px);
   }
 }
+
+@media screen and (max-width: 370px) {
+  .mobile-social__link {
+    @include font(400, 12px, 14px);
+  }
+}
