@@ -198,9 +198,7 @@ a {
   }
 
   .mobile-contacts__link-tel {
-    font-weight: 500;
-    font-size: 34px;
-    line-height: 1.1764705882;
+    font-size: calc(28px + 6 * (100vw - 320px) / 447);
     letter-spacing: 0.02em;
     color: var(--color-in-action);
   }
