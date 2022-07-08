@@ -95,7 +95,7 @@
   }
 
   .mobile-social__link {
-    @include font(500, 18px, 22px);
+    font-size: calc(12px + (22 - 12) * (100vw - 320px) / (767 - 320));
     letter-spacing: 0.02em;
     color: var(--color-in-action);
     padding-right: 10px;
@@ -105,17 +105,5 @@
 @media screen and (min-width: 768px) {
   .mobile-menu {
     display: none;
-  }
-}
-
-@media screen and (max-width: 399px) {
-  .mobile-social__link {
-    @include font(500, 16px, 20px);
-  }
-}
-
-@media screen and (max-width: 370px) {
-  .mobile-social__link {
-    @include font(400, 12px, 14px);
   }
 }
