@@ -134,8 +134,14 @@
     }
   }
 
-  .catalog-list__link:first-child .catalog-list__bottom-part {
-    height: 147px;
+  .catalog-list__link {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+  }
+
+  .catalog-list__bottom-part {
+    flex-grow: 1;
   }
 }
 

@@ -131,13 +131,10 @@
 @media screen and (max-width: 767px) {
   .footer__wrapper {
     flex-direction: column;
-  }
-
-  .wrapper-logo-address_left {
     margin-bottom: 60px;
   }
 
-  .wrapper-social {
+  .wrapper-logo-address_left {
     margin-bottom: 60px;
   }
 
@@ -153,10 +150,6 @@
 //768px
 
 @media screen and (min-width: 768px) and (max-width: 1199px) {
-  .wrapper-logo-address_left {
-    margin-right: 165px;
-  }
-
   .subscription-form {
     display: flex;
     flex-direction: column;
@@ -166,6 +159,7 @@
   .footer__wrapper {
     margin-bottom: 60px;
     justify-content: space-around;
+    align-items: baseline;
   }
 
   .catalog-list__image {
@@ -186,7 +180,7 @@
 
   .footer__container {
     flex-direction: row;
-    justify-content: space-between;
+    align-items: baseline;
   }
 
   .wrapper-logo-address_left {
@@ -217,5 +211,6 @@
 
   .footer__wrapper {
     text-align: left;
+    align-items: baseline;
   }
 }

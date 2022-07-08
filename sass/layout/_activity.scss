@@ -1,20 +1,6 @@
-@media screen and (max-width: 1199px) {
-  .section_non-padding-top {
-    display: none;
-  }
-}
-
 @media screen and (min-width: 1200px) {
   .section_non-padding-top {
     padding-top: 0;
-  }
-
-  .section__title {
-    @include font(700, 36px, 42px);
-    letter-spacing: 0.03em;
-    color: var(--color-title);
-    margin-bottom: 50px;
-    text-align: center;
   }
 
   .activity {
